@@ -1,0 +1,167 @@
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.board {
+	width: 600px;
+	height: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	border: 1px solid black;
+}
+.row {
+	width: 100%;
+	height: 12.5%;
+	position: absolute;
+	border: 0.5px solid black;
+}
+.row1 {
+	top: 0;
+	left: 0;
+}
+.row2 {
+	top: 12.5%;
+	left: 0;
+}
+.row3 {
+	top: 25%;
+	left: 0;
+}
+.row4 {
+	top: 37.5%;
+	left: 0;
+}
+.row5 {
+	top: 50%;
+	left: 0;
+}
+.row6 {
+	top: 62.5%;
+	left: 0;
+}
+.row7 {
+	top: 75%;
+	left: 0;
+}
+.row8 {
+	top: 87.5%;
+	left: 0;
+}
+.col {
+	width: 12.5%;
+	height: 100%;
+	position: absolute;
+	border: 1px solid black;
+	display: inline-block;
+}
+.col1 {
+	left: 0;
+	top: 0;
+}
+.col2 {
+	left: 12.5%;
+	top: 0;
+}
+.col3 {
+	left: 25%;
+	top: 0;
+}
+.col4 {
+	left: 37.5%;
+	top: 0;
+}
+.col5 {
+	left: 50%;
+	top: 0;
+}
+.col6 {
+	left: 62.5%;
+	top: 0;
+}
+.col7 {
+	left: 75%;
+	top: 0;
+}
+.col8 {
+	left: 87.5%;
+	top: 0;
+}
+.row1 .col:nth-child(odd), .row3 .col:nth-child(odd), .row5 .col:nth-child(odd), .row7 .col:nth-child(odd) {
+	background: grey;
+}
+.row2 .col:nth-child(even), .row4 .col:nth-child(even), .row6 .col:nth-child(even), .row8 .col:nth-child(even) {
+	background: grey;
+}
+.row1 .col:nth-child(odd):after, .row2 .col:nth-child(even):after, .row3 .col:nth-child(odd):after {
+	content: " ";
+display: inline-block;
+border-radius: 50%;
+width: 90%;
+height: 90%;
+background-color: pink;
+margin-left: 5%;
+margin-top: 5%;
+}
+.row6 .col:nth-child(even):after, .row7 .col:nth-child(odd):after, .row8 .col:nth-child(even):after {
+	content: " ";
+display: inline-block;
+border-radius: 50%;
+width: 90%;
+height: 90%;
+background-color: green;
+margin-left: 5%;
+margin-top: 5%;
+}
+.row .col:hover {
+	content: " ";
+	padding-bottom: 1%;
+}
