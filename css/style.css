@@ -50,13 +50,18 @@ textarea {
 
 /* Layout */
 .board {
-	width: 600px;
-	height: 600px;
+	max-width: 600px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5%;
+	margin-bottom: 5%;
 	border: 1px solid black;
+}
+.board:before {
+	content: " ";
+	display: block;
+	padding-top: 100%;
 }
 .row {
 	width: 100%;
@@ -66,35 +71,26 @@ textarea {
 }
 .row1 {
 	top: 0;
-	left: 0;
 }
 .row2 {
 	top: 12.5%;
-	left: 0;
 }
 .row3 {
 	top: 25%;
-	left: 0;
 }
 .row4 {
 	top: 37.5%;
-	left: 0;
 }
 .row5 {
 	top: 50%;
-	left: 0;
 }
 .row6 {
-	top: 62.5%;
-	left: 0;
-}
+	top: 62.5%;}
 .row7 {
 	top: 75%;
-	left: 0;
 }
 .row8 {
 	top: 87.5%;
-	left: 0;
 }
 .col {
 	width: 12.5%;
@@ -102,44 +98,37 @@ textarea {
 	position: absolute;
 	border: 1px solid black;
 	display: inline-block;
+	top: 0;
 }
 .col1 {
 	left: 0;
-	top: 0;
 }
 .col2 {
 	left: 12.5%;
-	top: 0;
 }
 .col3 {
 	left: 25%;
-	top: 0;
 }
 .col4 {
 	left: 37.5%;
-	top: 0;
 }
 .col5 {
 	left: 50%;
-	top: 0;
 }
 .col6 {
 	left: 62.5%;
-	top: 0;
 }
 .col7 {
 	left: 75%;
-	top: 0;
 }
 .col8 {
 	left: 87.5%;
-	top: 0;
 }
 .row1 .col:nth-child(odd), .row3 .col:nth-child(odd), .row5 .col:nth-child(odd), .row7 .col:nth-child(odd) {
-	background: grey;
+	background: #A9A9A9;
 }
 .row2 .col:nth-child(even), .row4 .col:nth-child(even), .row6 .col:nth-child(even), .row8 .col:nth-child(even) {
-	background: grey;
+	background: #A9A9A9;
 }
 .row1 .col:nth-child(odd):after, .row2 .col:nth-child(even):after, .row3 .col:nth-child(odd):after {
 	content: " ";
@@ -147,7 +136,7 @@ display: inline-block;
 border-radius: 50%;
 width: 90%;
 height: 90%;
-background-color: pink;
+background-color: #B22222;
 margin-left: 5%;
 margin-top: 5%;
 }
@@ -157,7 +146,7 @@ display: inline-block;
 border-radius: 50%;
 width: 90%;
 height: 90%;
-background-color: green;
+background-color: #996633;
 margin-left: 5%;
 margin-top: 5%;
 }
