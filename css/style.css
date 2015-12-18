@@ -150,5 +150,9 @@ margin-top: 5%;
 }
 .row .col:hover:after {
 	position: relative;
+<<<<<<< HEAD
 	top: -10%;
+=======
+	bottom: 10%;
+>>>>>>> master
 }
